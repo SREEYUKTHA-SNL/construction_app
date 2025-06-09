@@ -1,3 +1,5 @@
+
+import 'package:construction_app/view/tooldetails.dart';
 import 'package:flutter/material.dart';
 
 class ToolsLogPage extends StatelessWidget {
@@ -86,59 +88,64 @@ class ToolsLogPage extends StatelessWidget {
                   itemCount: tools.length,
                   itemBuilder: (context, index) {
                     final tool = tools[index];
-                    return Container(
-                      margin: const EdgeInsets.only(bottom: 12),
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: const Color(0xffCCE4FF),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Row(
-                        children: [
-                          Image.network(
-                            tool['image'],
-                            width: 40,
-                            height: 40,
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  tool['id'],
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
-                                    color: Color(0xff0A2342),
+                    return GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => ToolDetailPage(),));
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(bottom: 12),
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: const Color(0xffCCE4FF),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Row(
+                          children: [
+                            Image.network(
+                              tool['image'],
+                              width: 40,
+                              height: 40,
+                            ),
+                            const SizedBox(width: 12),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    tool['id'],
+                                    style: const TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 16,
+                                      color: Color(0xff0A2342),
+                                    ),
                                   ),
-                                ),
-                                Row(
-                                  children: [
-                                    Text(
-                                      tool['name'],
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        color: Color(0xff0A2342),
-                                      ),
-                                    ),Spacer(),
-                                       Text(
-                            tool['status'],
-                            style: TextStyle(
-                              color: _getStatusColor(tool['status']),
-                              fontWeight: FontWeight.w600,
+                                  Row(
+                                    children: [
+                                      Text(
+                                        tool['name'],
+                                        style: const TextStyle(
+                                          fontSize: 14,
+                                          color: Color(0xff0A2342),
+                                        ),
+                                      ),Spacer(),
+                                         Text(
+                              tool['status'],
+                              style: TextStyle(
+                                color: _getStatusColor(tool['status']),
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
-                          ),
-
-                                  ],
-                                ),
-                              ],
+                      
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                       
-                          const SizedBox(width: 8),
-                          const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.purple)
-                        ],
+                         
+                            const SizedBox(width: 8),
+                            const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.purple)
+                          ],
+                        ),
                       ),
                     );
                   },

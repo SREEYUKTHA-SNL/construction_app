@@ -1,4 +1,5 @@
-import 'package:construction_app/otp.dart';
+
+import 'package:construction_app/view/otp.dart';
 import 'package:flutter/material.dart';
 
 void main() {

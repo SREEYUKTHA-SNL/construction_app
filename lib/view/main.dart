@@ -1,8 +1,5 @@
-import 'package:construction_app/activity.dart';
-import 'package:construction_app/confirmcheckin.dart';
-import 'package:construction_app/login.dart';
-import 'package:construction_app/tooldetails.dart';
-import 'package:construction_app/toolpage.dart';
+
+import 'package:construction_app/view/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {

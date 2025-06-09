@@ -1,5 +1,7 @@
-import 'package:construction_app/attendancemarkpage.dart';
-import 'package:construction_app/my%20profile.dart';
+
+import 'package:construction_app/view/activity.dart';
+import 'package:construction_app/view/attendancemarkpage.dart';
+import 'package:construction_app/view/my%20profile.dart';
 import 'package:flutter/material.dart';
 import 'package:pie_chart/pie_chart.dart';
 
@@ -22,9 +24,9 @@ class _EmployeeHomePageState extends State<EmployeeHomePage> {
 
   final List<Widget> _pages = [
     Center(child: Text("Time Page")),
-    Center(child: Text("Search Page")),
-    HomeContentPage(), // Your original homepage content
-    MarkAttendancePage(),
+    ActivityPage(),
+    HomeContentPage(),
+    MainTabPage(),
     ProfileScreen()
   ];
 

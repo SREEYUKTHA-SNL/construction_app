@@ -1,5 +1,6 @@
-import 'package:construction_app/forgot%20your%20password.dart';
-import 'package:construction_app/homepage.dart';
+
+import 'package:construction_app/view/forgot%20your%20password.dart';
+import 'package:construction_app/view/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main() {

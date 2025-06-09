@@ -1,4 +1,5 @@
-import 'package:construction_app/enter%20new%20password.dart';
+
+import 'package:construction_app/view/enter%20new%20password.dart';
 import 'package:flutter/material.dart';
 
 void main() {

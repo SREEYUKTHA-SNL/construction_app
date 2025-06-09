@@ -1,5 +1,6 @@
-import 'package:construction_app/enter%20your%20details.dart';
-import 'package:construction_app/login.dart';
+
+import 'package:construction_app/view/enter%20your%20details.dart';
+import 'package:construction_app/view/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {

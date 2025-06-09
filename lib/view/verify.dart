@@ -1,5 +1,5 @@
-import 'package:construction_app/enter%20new%20password.dart';
-import 'package:construction_app/welcomepage.dart';
+
+import 'package:construction_app/view/welcomepage.dart';
 import 'package:flutter/material.dart';
 
 class Verifyscreen extends StatefulWidget {

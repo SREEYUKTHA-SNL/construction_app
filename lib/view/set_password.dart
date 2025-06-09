@@ -1,4 +1,5 @@
-import 'package:construction_app/verify.dart';
+
+import 'package:construction_app/view/verify.dart';
 import 'package:flutter/material.dart';
 
 void main() {
